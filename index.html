@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Software Remoto</title>
+<style>
+ 
+body { font-family: Arial; text-align: center; }
+.pagina { display: none; }
+.activa { display: block; }
+img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+ 
+img:hover {
+    transform: scale(1.1);
+}
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+input, select, textarea {
+    width: 220px;
+    padding: 6px;
+    margin-top: 5px;
+}
+form {
+    display: inline-block;
+    text-align: left;
+}
+</style>
+<script>
+function mostrar(pagina) {
+    let paginas = document.getElementsByClassName("pagina");
+    for (let i = 0; i < paginas.length; i++) {
+        paginas[i].classList.remove("activa");
+    }
+    document.getElementById(pagina).classList.add("activa");
+}
+</script>
+</head>
+<body onload="mostrar('inicio')">
+<!-- PÁGINA PRINCIPAL -->
+<div id="inicio" class="pagina">
+<h1>Gael Santiago Miguel Esquivel</h1>
+<h2>Software de Soporte Remoto</h2>
+<img src="https://cdn.phototourl.com/free/2026-04-06-a5655d83-8c6b-4b78-a537-55d22d5ab49c.png" onclick="mostrar('teamviewer')">
+<p>TeamViewer</p>
+<img src="https://cdn.phototourl.com/free/2026-04-07-0a149207-7f95-490c-9037-b461d833c29c.png" onclick="mostrar('anydesk')">
+<p>AnyDesk</p>
+<img src="https://cdn.phototourl.com/free/2026-04-07-43a483f3-f035-47df-8526-b62c8a3d1938.jpg" onclick="mostrar('chrome')">
+<p>Chrome Remote Desktop</p>
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" onclick="mostrar('formulario')">
+<p>Cuestionario</p>
+</div>
+<!-- TEAMVIEWER -->
+<div id="teamviewer" class="pagina">
+<h1>Gael Santiago Miguel Esquivel</h1>
+<h2>TeamViewer</h2>
+<img src="https://cdn.phototourl.com/free/2026-04-06-a5655d83-8c6b-4b78-a537-55d22d5ab49c.png">
+<p>TeamViewer es un software que permite conectarse a otra computadora de forma remota a través de internet. Es muy utilizado para soporte técnico, clases en línea y acceso a archivos desde otra ubicación.</p>
+<h3>Características:</h3>
+<ul>
+<li>Acceso remoto a computadoras desde cualquier lugar</li>
+<li>Transferencia de archivos</li>
+<li>Videollamadas y chat integrado</li>
+<li>Compatible con Windows, Mac y dispositivos móviles</li>
+</ul>
+<h3>Requisitos:</h3>
+<ul>
+<li>Conexión a internet estable</li>
+<li>Sistema operativo Windows 7 o superior</li>
+<li>Memoria RAM mínima de 2 GB</li>
+</ul>
+<h3>Instalación paso a paso:</h3>
+<ol>
+<li>Entrar a la página oficial de TeamViewer</li>
+<li>Descargar el instalador</li>
+<li>Ejecutar el archivo descargado</li>
+<li>Aceptar términos y condiciones</li>
+<li>Finalizar la instalación</li>
+<li>Abrir el programa y usar el ID y contraseña para conectarse</li>
+</ol>
+<button onclick="mostrar('inicio')">Volver al inicio</button>
+</div>
+<!-- ANYDESK -->
+<div id="anydesk" class="pagina">
+<h1>Gael Santiago Miguel Esquivel</h1>
+<h2>AnyDesk</h2>
+<img src="https://cdn.phototourl.com/free/2026-04-07-0a149207-7f95-490c-9037-b461d833c29c.png">
+<p>AnyDesk es un programa de acceso remoto que permite controlar otra computadora de manera rápida y segura. Es conocido por su velocidad y bajo consumo de recursos.</p>
+<h3>Características:</h3>
+<ul>
+<li>Alta velocidad de conexión</li>
+<li>Ligero y fácil de usar</li>
+<li>Permite compartir pantalla</li>
+<li>Transferencia de archivos</li>
+</ul>
+<h3>Requisitos:</h3>
+<ul>
+<li>Conexión a internet</li>
+<li>Windows, Linux o Mac</li>
+<li>Procesador básico</li>
+</ul>
+<h3>Instalación paso a paso:</h3>
+<ol>
+<li>Entrar a la página oficial de AnyDesk</li>
+<li>Descargar el programa</li>
+<li>Ejecutar el archivo</li>
+<li>Instalar o usar versión portátil</li>
+<li>Ingresar el código de acceso del otro equipo</li>
+</ol>
+<button onclick="mostrar('inicio')">Volver al inicio</button>
+</div>
+<!-- CHROME REMOTE DESKTOP -->
+<div id="chrome" class="pagina">
+<h1>Gael Santiago Miguel Esquivel</h1>
+<h2>Chrome Remote Desktop</h2>
+<img src="https://cdn.phototourl.com/free/2026-04-07-43a483f3-f035-47df-8526-b62c8a3d1938.jpg">
+<p>Chrome Remote Desktop es una herramienta de Google que permite acceder a otra computadora usando el navegador Google Chrome. Es muy útil para acceder a tu PC desde cualquier lugar.</p>
+<h3>Características:</h3>
+<ul>
+<li>Funciona desde el navegador</li>
+<li>Fácil de configurar</li>
+<li>Seguro con cuenta de Google</li>
+<li>No requiere instalación complicada</li>
+</ul>
+<h3>Requisitos:</h3>
+<ul>
+<li>Cuenta de Google</li>
+<li>Navegador Google Chrome</li>
+<li>Conexión a internet</li>
+</ul>
+<h3>Instalación paso a paso:</h3>
+<ol>
+<li>Abrir Google Chrome</li>
+<li>Buscar Chrome Remote Desktop</li>
+<li>Instalar la extensión</li>
+<li>Configurar acceso remoto</li>
+<li>Ingresar con tu cuenta de Google</li>
+</ol>
+<button onclick="mostrar('inicio')">Volver al inicio</button>
+</div>
+<!-- FORMULARIO -->
+<div id="formulario" class="pagina">
+<h1>Gael Santiago Miguel Esquivel</h1>
+<h2>Cuestionario de Satisfacción</h2>
+<p>Tu opinión es muy importante para mejorar la calidad del servicio.</p>
+<form>
+<label>Nombre:</label><br>
+<input type="text" required><br><br>
+<label>¿Te gustó la página?</label><br>
+<select required>
+<option value="">Selecciona una opción</option>
+<option>Mucho</option>
+<option>Regular</option>
+<option>Poco</option>
+</select><br><br>
+<label>¿Qué programa te pareció mejor?</label><br>
+<input type="radio" name="software"> TeamViewer<br>
+<input type="radio" name="software"> AnyDesk<br>
+<input type="radio" name="software"> Chrome Remote Desktop<br><br>
+<label>Comentarios:</label><br>
+<textarea rows="4"></textarea><br><br>
+<button type="submit">Enviar</button>
+</form>
+<br><br>
+<button onclick="mostrar('inicio')">Volver al inicio</button>
+</div>
+</body>
+</html>
